@@ -1,0 +1,21 @@
+<p align=right>Prepared: {!v:Who prepared!}</p>
+<h1 align=center><u>INFORMATION</u></h1>
+<br/>
+<h3 align=justify><u>This is general information about selected country {!a:5!}:</u></h3>
+<p align=left>Name:<b> {!a:5!}</b></p>
+<p align=left>Area:<b> {!a:6!}</b></p>
+<p align=left>Population:<b> {!a:7!}</b></p>
+<p align=left>FIPS 10-4 Country Code:<b> {!a:1!}</b></p>
+<p align=left>ISO 3166-1 Alpha-2 Country Code:<b> {!a:2!}</b></p>
+<p align=left>ISO 3166-1 Alpha-3 Country Code:<b> {!a:3!}</b></p>
+<p align=left>ISO 3166-1 Numeric-3 Country Code: <b>{!a:4!}</b></p>
+<p align=left>Macro geographical (continental region):
+<b>
+{!if(a:8=150)->Europe!}
+{!ef(a:8=2)->Africa!}
+{!ef(a:8=9)->Oceania!}
+{!df->Unknown!}
+</b>
+</p> 
+<br/><br/><br/>
+<p align=center><i>{!f:footer.txt!}</i></p>
