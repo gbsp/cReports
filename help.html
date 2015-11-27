@@ -1,0 +1,23 @@
+<p><b>The plugin cReports allows you to generate customized reports from selected object in QGIS.</b></p>
+
+<p>First you need to correctly configure setting and template files.</p>
+
+<li><b>1. Setting in setting.ini file:</b>
+<ul>reports - plugin name  displayed in QGIS</ul>
+<ul>countries - layer name on which the plugin runs</ul>
+<ul>utf-8 - character encoding</ul>
+</li>
+<li><b>2. In template.html file set the contents of the report containing HTML formatting.</b>
+
+<ul>You can use the following token values in template.html:</ul>
+
+<ul>a) {!v:name variable!} - replaced with interactive values (from dialog box)</ul>
+
+<ul>b) {!a:1!} - replaced with 1 - n (number of column) attribute from selected object </ul>
+
+<ul>c) Variant substitution (case statement):
+	<ol>{!if(a:1=value1 )->contents…1!}- if condition </ol>
+	<ol>{!ef(a:2=value2)->contents…2!} - else if condition</ol>
+	<ol>{!df->contents…3!} - default</ol></ul>
+
+<ul>d) {!f:footer.txt!} - this statement includes in report content of footer.txt file. This file must be in root folder of the plugin.</ul>
